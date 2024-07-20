@@ -16,34 +16,6 @@ CORS(app,resources={r"/*":{"origins":"*"}})
 # Define a route for HTTP request
 @app.route('/validate', methods=['POST'])
 
-# def verify_certificate_image():
-#     try:
-#         # Receive Data from Frontend API Request
-#         data = request.get_json()
-
-#         req = urllib.request.urlopen(data)
-        
-#         arr = np.asarray(bytearray(req.read()), dtype=np.uint8)
-#         img = cv2.imdecode(arr, 3)
-
-#         resize = tf.image.resize(img, (256,256))
-
-#         new_model = load_model(os.path.join('models', 'imageclassifier.h5'), compile=False)
-
-#         yhat = new_model.predict(np.expand_dims(resize/255, 0))
-
-#         if yhat > 0.5:
-#             print(f'NOT CERT AT ALL')
-#             result = False
-#         else:
-#             print(f'COULD BE CERT')
-#             result = True
-        
-#         return jsonify({'Certificate Validity': result})
-    
-#     except Exception as e:
-#         return jsonify({'error': str(e)})
-
 # OPTICAL CHARACTER RECOGNITION (OCR) LOGIC  =================================================================
 def detect_certificate_text():
     try:
