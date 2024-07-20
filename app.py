@@ -4,14 +4,6 @@ from flask_cors import CORS
 from waitress import serve
 
 # IMAGE CLASSIFICATION LOGIC =================================================================
-from tensorflow.keras.models import load_model # type: ignore
-import cv2
-import tensorflow as tf
-import os
-import numpy as np
-import urllib
-
-import matplotlib.pyplot as plt
 import keras_ocr
 
 from ultralytics import YOLO
