@@ -4,3 +4,4 @@ keras_ocr==0.9.3
 ultralytics==8.2.60
 tensorflow
 waitress==3.0.0
+opencv
