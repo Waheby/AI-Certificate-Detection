@@ -2,6 +2,4 @@ Flask==3.0.3
 Flask_Cors==4.0.1
 keras_ocr==0.9.3
 ultralytics==8.2.60
-tensorflow
 waitress==3.0.0
-opencv==1.26.4
